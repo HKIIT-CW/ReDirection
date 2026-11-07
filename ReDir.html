@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自動轉向中...</title>
+    
+    <script>
+        // --------------------------------------------------
+        // 在這裡替換你每次想分享的 YouTube 網址：
+        const youtubeUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        // --------------------------------------------------
+
+        // 頁面載入後立即轉向
+        window.location.replace(youtubeUrl);
+    </script>
+</head>
+<body>
+    <p style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+        正在自動轉向至 YouTube...<br><br>
+        如果沒有自動跳轉，請 <a id="fallback-link" href="#">按此直接開啟</a>。
+    </p>
+
+    <script>
+        document.getElementById('fallback-link').href = youtubeUrl;
+    </script>
+</body>
+</html>
